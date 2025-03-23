@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UpperCase Transformer WebSite</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="main" id="main">
+        
+        <h1>UpperCase Transformer</h1>
+
+        <div class="container">
+            <p id="required-p">You must fill this field.</p>
+            <textarea type="text" required id="input" placeholder="Enter something:"></textarea>
+            <button onclick="submit()">Submit</button>
+            <textarea type="text" readonly id="output" placeholder="Results will appear here..."></textarea>
+        </div>
+
+        <div class="images">
+            <img src="copy-two-paper-sheets-interface-symbol.png" id="copy" onclick="copy()" title="Copy to clipboard" width="30px"> 
+            <p id="copied-text">Text copied!</p>
+            <img src="broom.png" id="broom" onclick="reload()" title="Clear the fields" width="45px">
+        </div>
+
+        <img src="info.png" id="img" onclick="openModal()" title="How this works?" width="45px">
+
+        
+
+    </div>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <h1 class="h1Modal">Tutorial</h1>
+            <p>Enter a string in the input box and click on the submit button. <br> The output will be displayed in the output box.</p>
+            <button onclick="closeModal()">Close</button>
+        </div>
+    </div>
+
+    <div id="sentYes">
+        <div class="sentYes-content">
+            <h1 class="sentYesh1">Congratulations,</h1>
+            <p>data were sent successfully!</p>
+        </div>
+    </div>
+
+    <div id="sentNo">
+        <div class="sentNo-content">
+            <h1 class="sentNoh1">Oops,</h1>
+            <p>something went wrong, <br> please try again!</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p id="footer-p">Try my latest project: <br> <a href="sitodue.html" target="_blank">LowerCase Transformer</a>
+        <br>
+        <p id="footer-p2">Created, with love, by Lorenzo ❤️</p> 
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
